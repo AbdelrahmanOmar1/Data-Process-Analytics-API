@@ -9,12 +9,11 @@ const app = express();
 
 const prisma = new PrismaClient();
 
-app.use(
-  cors({
-     origin: "*" // for testing purpose only
-    credentials: true,
-  }),
-);
+
+app.use(cors({
+  origin: "*",
+  credentials: true
+}));
 app.use(express.json());
 
 app.use("/api/v1", dataRoutes);
