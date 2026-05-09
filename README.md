@@ -111,6 +111,7 @@ NODE_ENV=development
 Navigate to the backend folder:
 
 Bash
+
 # Install dependencies
 npm install
 
