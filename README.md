@@ -24,8 +24,7 @@ A full-stack analytics dashboard that processes CSV data and generates business 
 
 ## 🚀 Live Demo
 
-- Frontend: https://your-frontend-link.vercel.app  
-- Backend: https://your-backend-link.railway.app  
+--
 
 ---
 
