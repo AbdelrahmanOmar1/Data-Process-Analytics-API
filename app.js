@@ -11,10 +11,7 @@ const prisma = new PrismaClient();
 
 app.use(
   cors({
-     origin: [
-    "http://localhost:5173",
-    "https://data-process-analytics-api.vercel.app/"
-  ],
+     origin: "*"
     credentials: true,
   }),
 );
