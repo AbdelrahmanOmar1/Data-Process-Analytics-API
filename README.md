@@ -60,6 +60,9 @@ A full-stack analytics dashboard that processes CSV data and generates business 
 
 Used for database modeling and querying.
 
+
+
+
 ### Example Schema:
 ```prisma
 model Sale {
@@ -69,13 +72,14 @@ model Sale {
   price     Float
   createdAt DateTime @default(now())
 }
-
+```
 ## 🗄️ Prisma Commands
 
 ```bash
 npx prisma generate
 npx prisma migrate dev
 npx prisma migrate deploy
+```
 
 It sounds like you're setting up a full-stack application focused on file processing (likely CSVs). Here is that information cleaned up and organized into a professional, scannable Markdown format.
 
