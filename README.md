@@ -25,9 +25,7 @@ This project simulates a **real-world data processing system** used in enterpris
 ## 🚀 Live Demo
 
 > ⚠️ Add your deployed links here
-
-- Frontend: `https://your-frontend-url`
-- Backend API: `https://your-backend-url`
+--
 
 ---
 
