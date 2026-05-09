@@ -11,7 +11,7 @@ const prisma = new PrismaClient();
 
 app.use(
   cors({
-     origin: "*"
+     origin: "*" // for testing purpose only
     credentials: true,
   }),
 );
