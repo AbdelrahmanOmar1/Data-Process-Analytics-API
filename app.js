@@ -14,9 +14,8 @@ const prisma = new PrismaClient();
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://data-process-analytics-fh4h1jss2-abdelrahamn1s-projects.vercel.app/"
-  ],
-  credentials: true
+    "https://data-process-analytics-fh4h1jss2-abdelrahamn1s-projects.vercel.app"
+  ]
 }));
 app.use(express.json());
 
