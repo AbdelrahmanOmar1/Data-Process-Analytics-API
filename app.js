@@ -13,7 +13,7 @@ app.use(
   cors({
      origin: [
     "http://localhost:5173",
-    "https://your-frontend.vercel.app"
+    "https://data-process-analytics-api.vercel.app/"
   ],
     credentials: true,
   }),
