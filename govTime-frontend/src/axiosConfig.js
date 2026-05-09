@@ -1,8 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://data-process-analytics-api-production.up.railway.app",
-  withCredentials: true,
+  baseURL: import.meta.env.VITE_API_URL,
 });
 
 export default api;
