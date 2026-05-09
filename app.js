@@ -16,8 +16,8 @@ app.use(cors({
 }));
 app.use(express.json());
 
-app.use("/api/v1", dataRoutes);
-app.use("/api/v1", analytics);
+app.use("/", dataRoutes);
+app.use("/", analytics);
 
 
 // handle unhandled routes
