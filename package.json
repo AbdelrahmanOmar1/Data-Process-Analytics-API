@@ -11,7 +11,8 @@
     "dev": "cross-env NODE_ENV=development nodemon server.js",
     "stop": "cross-env NODE_ENV=production pm2 stop server.js",
     "logs": "cross-env NODE_ENV=production pm2 logs server.js",
-    "start" : "node server.js"
+    "start" : "node server.js",
+    "build": "prisma generate"
   },
   "dependencies": {
     "@prisma/client": "^6.19.3",
