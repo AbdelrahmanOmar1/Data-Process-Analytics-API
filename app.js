@@ -10,8 +10,12 @@ const app = express();
 const prisma = new PrismaClient();
 
 
+
 app.use(cors({
-  origin: "*",
+  origin: [
+    "http://localhost:5173",
+    "https://your-frontend.vercel.app"
+  ],
   credentials: true
 }));
 app.use(express.json());
