@@ -1,0 +1,70 @@
+generator client {
+  provider = "prisma-client-js"
+}
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+
+model Sales {
+  id                     String   @id @default(cuid())
+
+  branchName            String
+  branchCode            String
+
+  departmentCode        String
+  departmentName        String
+
+  mainGroupCode         String
+  mainGroupName         String
+
+  subGroupCode          String
+  subGroupName          String
+
+  itemCode              String
+  barcode               String?
+  itemName              String
+
+  netSalesQuantity      Float
+  netSalesValue         Float
+
+  createdAt             DateTime @default(now())
+}
+
+
+model Purchases {
+  id                     String   @id @default(cuid())
+
+  itemCode              String
+  itemName              String
+
+  purchaseValue        Float
+  returnValue          Float
+  purchaseReturnRate   Float?
+
+  bonusQuantity        Float
+
+  netPurchaseQuantity  Float
+  createdAt            DateTime @default(now())
+}
+
+
+model Analytics {
+  id                  String   @id @default(cuid())
+
+  itemCode            String   @unique
+  itemName            String?
+
+  totalSalesValue     Float
+  totalPurchaseValue  Float
+
+  profit              Float
+
+  deadStockFlag       Boolean  @default(false)
+
+  totalSalesQty       Float
+  totalPurchaseQty    Float
+
+  updatedAt           DateTime @updatedAt
+}
